@@ -1,0 +1,44 @@
+/*
+ * This file contains the generated custom tailwind styles.
+ * You don't need to use or maintain this file yourself. However, since the
+ * frontend.fyi playground uses the Tailwind CDN, and there's some limitations
+ * in combination with our live playground, we need to generate these styles in order
+ * for the playground to show a working demo.
+*/
+
+.hero-background {
+  background: linear-gradient(
+      to bottom,
+      #0f172a 100px,
+      transparent 100px,
+      transparent calc(80vh - 40px),
+      #0f172a calc(80vh - 40px)
+    ),
+    linear-gradient(
+      to right,
+      #0f172a 24px,
+      transparent 24px,
+      transparent calc(100% - 24px),
+      #0f172a calc(100% - 24px)
+    );
+}
+.window-mask {
+  -webkit-mask-image: linear-gradient(black, black), url(/window.svg);
+  mask-image: linear-gradient(black, black), url(/window.svg);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: auto, 300px auto;
+  mask-size: auto, 300px auto;
+  -webkit-mask-position: center center, center right 3rem;
+  mask-position: center center, center right 3rem;
+}
+@media (max-width: 768px) {
+  .window-mask {
+    -webkit-mask-size: auto, 150px auto;
+    mask-size: auto, 150px auto;
+    -webkit-mask-position: center center, center bottom 1.5rem;
+    mask-position: center center, center bottom 1.5rem;
+  }
+}
