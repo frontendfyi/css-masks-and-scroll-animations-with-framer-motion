@@ -32,7 +32,7 @@ function App() {
         >
           <div className="window-mask flex flex-col rounded-3xl bg-white p-12 md:flex-row">
             <div className="flex h-full flex-col">
-              <h1 className="mb-5 max-w-[12ch] text-4xl font-bold leading-[0.85] md:my-auto md:text-[80px] lg:text-[128px]">
+              <h1 className="mb-5 max-w-[12ch] text-4xl font-bold leading-[0.85] md:my-auto md:text-[80px] xl:text-[128px]">
                 Playing with masks and Framer Motion.
               </h1>
               <p className="text-lg md:text-3xl">
