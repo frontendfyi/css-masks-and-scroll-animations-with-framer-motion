@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Because of limitations in our playground, any updates you
+ * do in the styles below, won't be reflected in the playground unfortunately.
+ */
+
 .hero-background {
   background: linear-gradient(
       to bottom,
